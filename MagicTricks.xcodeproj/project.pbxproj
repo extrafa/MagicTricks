@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		757CA4D02EB8632500FFAC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757CA4CC2EB8632500FFAC50 /* Assets.xcassets */; };
+		757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */; };
+		757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		757CA3F72EB85B2200FFAC50 /* MagicTricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicTricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		757CA4CC2EB8632500FFAC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTricksApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		757CA3F92EB85B2200FFAC50 /* MagicTricks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MagicTricks;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		757CA3F42EB85B2200FFAC50 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		757CA3EE2EB85B2200FFAC50 = {
 			isa = PBXGroup;
 			children = (
-				757CA3F92EB85B2200FFAC50 /* MagicTricks */,
+				757CA4CF2EB8632500FFAC50 /* MagicTricks */,
 				757CA3F82EB85B2200FFAC50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,104 @@
 				757CA3F72EB85B2200FFAC50 /* MagicTricks.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		757CA4C42EB8632500FFAC50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		757CA4C52EB8632500FFAC50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		757CA4C62EB8632500FFAC50 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4D52EB8637600FFAC50 /* View */,
+				757CA4C42EB8632500FFAC50 /* Model */,
+				757CA4C52EB8632500FFAC50 /* ViewModel */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		757CA4C72EB8632500FFAC50 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4C62EB8632500FFAC50 /* Walkthrough */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		757CA4C82EB8632500FFAC50 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		757CA4C92EB8632500FFAC50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		757CA4CA2EB8632500FFAC50 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4D32EB8634400FFAC50 /* Application */,
+				757CA4C72EB8632500FFAC50 /* Modules */,
+				757CA4C82EB8632500FFAC50 /* Services */,
+				757CA4C92EB8632500FFAC50 /* Shared */,
+				757CA4D42EB8635E00FFAC50 /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		757CA4CB2EB8632500FFAC50 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		757CA4CF2EB8632500FFAC50 /* MagicTricks */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4CA2EB8632500FFAC50 /* Sources */,
+				757CA4CB2EB8632500FFAC50 /* Tests */,
+			);
+			path = MagicTricks;
+			sourceTree = "<group>";
+		};
+		757CA4D32EB8634400FFAC50 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		757CA4D42EB8635E00FFAC50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4CC2EB8632500FFAC50 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		757CA4D52EB8637600FFAC50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +158,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				757CA3F92EB85B2200FFAC50 /* MagicTricks */,
 			);
 			name = MagicTricks;
 			packageProductDependencies = (
@@ -109,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757CA4D02EB8632500FFAC50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */,
+				757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
