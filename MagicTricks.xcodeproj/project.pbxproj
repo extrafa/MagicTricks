@@ -10,6 +10,7 @@
 		757CA4D02EB8632500FFAC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757CA4CC2EB8632500FFAC50 /* Assets.xcassets */; };
 		757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */; };
 		757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */; };
+		757CA4D72EB864F900FFAC50 /* Walkthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4D62EB864F900FFAC50 /* Walkthrough.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		757CA4CC2EB8632500FFAC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
 		757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTricksApp.swift; sourceTree = "<group>"; };
+		757CA4D62EB864F900FFAC50 /* Walkthrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walkthrough.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		757CA4C42EB8632500FFAC50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				757CA4D62EB864F900FFAC50 /* Walkthrough.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757CA4D72EB864F900FFAC50 /* Walkthrough.swift in Sources */,
 				757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */,
 				757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */,
 			);

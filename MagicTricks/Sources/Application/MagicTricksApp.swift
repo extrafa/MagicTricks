@@ -11,7 +11,7 @@ import SwiftUI
 struct MagicTricksApp: App {
     var body: some Scene {
         WindowGroup {
-            WalkthroughView()
+            WalkthroughView(steps: TestWalkthrough.walk)
         }
     }
 }

@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct WalkthroughView: View {
+    let steps: Walkthrough
+    @State var currentSection: Int = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $currentSection) {
+            ForEach(steps.steps.enumerated(), id: \.offset) { index, step in
+                Text(step.title)
+                    .tag(index)
+            }
         }
-        .padding()
+        .tabViewStyle(.page)
     }
 }
 
 #Preview {
-    WalkthroughView()
+    WalkthroughView(steps: TestWalkthrough.walk)
 }
