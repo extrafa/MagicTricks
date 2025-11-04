@@ -27,7 +27,7 @@ struct TestWalkthrough {
         id: "walk",
         steps: [
         WalkthroughStep(title: "Test 1", description: "test", image: "test", buttonText: "test", buttonTextColor: .white, buttonColor: .black),
-        WalkthroughStep(title: "Test 2", description: "test", image: "test", buttonText: "test", buttonTextColor: .white, buttonColor: .black),
-        WalkthroughStep(title: "Test 3", description: "test", image: "test", buttonText: "test", buttonTextColor: .white, buttonColor: .black)
+        WalkthroughStep(title: "Test 2", description: "ergergwer", image: "test", buttonText: "refrf", buttonTextColor: .white, buttonColor: .black),
+        WalkthroughStep(title: "Test 3", description: "ergergfervsfvrevs", image: "test", buttonText: "gbdser", buttonTextColor: .white, buttonColor: .black)
     ])
 }

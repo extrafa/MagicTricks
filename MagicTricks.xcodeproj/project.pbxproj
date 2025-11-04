@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751274FB2EB9944700E7EDC9 /* WalkthroughButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */; };
 		757CA4D02EB8632500FFAC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757CA4CC2EB8632500FFAC50 /* Assets.xcassets */; };
 		757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */; };
 		757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughButton.swift; sourceTree = "<group>"; };
 		757CA3F72EB85B2200FFAC50 /* MagicTricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicTricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757CA4CC2EB8632500FFAC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		751274F92EB9942200E7EDC9 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		757CA3EE2EB85B2200FFAC50 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		757CA4C92EB8632500FFAC50 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				751274F92EB9942200E7EDC9 /* UIComponents */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -221,6 +232,7 @@
 			files = (
 				757CA4D72EB864F900FFAC50 /* Walkthrough.swift in Sources */,
 				757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */,
+				751274FB2EB9944700E7EDC9 /* WalkthroughButton.swift in Sources */,
 				757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
