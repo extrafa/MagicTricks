@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+typealias buttonAction = () -> Void
+
 struct Walkthrough: Identifiable, Hashable {
     var id: String
     let steps: [WalkthroughStep]
@@ -18,16 +20,14 @@ struct WalkthroughStep: Hashable {
     let description: String
     let image: String
     let buttonText: String
-    let buttonTextColor: Color
-    let buttonColor: Color
 }
 
 struct TestWalkthrough {
     static let walk: Walkthrough = Walkthrough(
         id: "walk",
         steps: [
-        WalkthroughStep(title: "Test 1", description: "test", image: "test", buttonText: "test", buttonTextColor: .white, buttonColor: .black),
-        WalkthroughStep(title: "Test 2", description: "ergergwer", image: "test", buttonText: "refrf", buttonTextColor: .white, buttonColor: .black),
-        WalkthroughStep(title: "Test 3", description: "ergergfervsfvrevs", image: "test", buttonText: "gbdser", buttonTextColor: .white, buttonColor: .black)
+        WalkthroughStep(title: "Test 1", description: "test", image: "test", buttonText: "test"),
+        WalkthroughStep(title: "Test 2", description: "ergergwer", image: "test", buttonText: "refrf"),
+        WalkthroughStep(title: "Test 3", description: "ergergfervsfvrevs", image: "test", buttonText: "gbdser")
     ])
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		751274FB2EB9944700E7EDC9 /* WalkthroughButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */; };
+		756CF6082EB9A2470013B68D /* WalkthroughButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CF6072EB9A2470013B68D /* WalkthroughButtonStyle.swift */; };
+		756CF60A2EB9A9010013B68D /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CF6092EB9A9010013B68D /* WalkthroughViewModel.swift */; };
 		757CA4D02EB8632500FFAC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757CA4CC2EB8632500FFAC50 /* Assets.xcassets */; };
 		757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */; };
 		757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757CA4CE2EB8632500FFAC50 /* MagicTricksApp.swift */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughButton.swift; sourceTree = "<group>"; };
+		756CF6072EB9A2470013B68D /* WalkthroughButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughButtonStyle.swift; sourceTree = "<group>"; };
+		756CF6092EB9A9010013B68D /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
 		757CA3F72EB85B2200FFAC50 /* MagicTricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicTricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757CA4CC2EB8632500FFAC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757CA4CD2EB8632500FFAC50 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				751274FA2EB9944700E7EDC9 /* WalkthroughButton.swift */,
+				756CF6072EB9A2470013B68D /* WalkthroughButtonStyle.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 		757CA4C52EB8632500FFAC50 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				756CF6092EB9A9010013B68D /* WalkthroughViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -233,7 +239,9 @@
 				757CA4D72EB864F900FFAC50 /* Walkthrough.swift in Sources */,
 				757CA4D12EB8632500FFAC50 /* WalkthroughView.swift in Sources */,
 				751274FB2EB9944700E7EDC9 /* WalkthroughButton.swift in Sources */,
+				756CF6082EB9A2470013B68D /* WalkthroughButtonStyle.swift in Sources */,
 				757CA4D22EB8632500FFAC50 /* MagicTricksApp.swift in Sources */,
+				756CF60A2EB9A9010013B68D /* WalkthroughViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

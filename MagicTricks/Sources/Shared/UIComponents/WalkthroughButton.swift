@@ -9,16 +9,17 @@ import SwiftUI
 
 struct WalkthroughButton: View {
     let walkthrough: WalkthroughStep
-    let action: () -> Void
+    let style = WalkthroughButtonStyle()
+    let action: buttonAction
     var body: some View {
         Button {
             action()
         } label: {
             Text(walkthrough.buttonText)
                 .font(.headline)
-                .foregroundColor(walkthrough.buttonTextColor)
+                .foregroundColor(style.buttonTextColor)
                 .frame(maxWidth: .infinity, maxHeight: 65)
-                .background(walkthrough.buttonColor)
+                .background(style.buttonColor)
                 .cornerRadius(30)
                 .padding(.horizontal)
         }
@@ -30,9 +31,7 @@ struct WalkthroughButton: View {
         title: "Test",
         description: "Test",
         image: "Test",
-        buttonText: "Test",
-        buttonTextColor: .white,
-        buttonColor: .black),
+        buttonText: "Test"),
         action: { print("WORKS") }
     )
 }

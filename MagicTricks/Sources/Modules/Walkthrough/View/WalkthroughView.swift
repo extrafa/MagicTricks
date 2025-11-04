@@ -8,32 +8,29 @@
 import SwiftUI
 
 struct WalkthroughView: View {
-    let steps: Walkthrough
-    @State var currentSection: Int = 0
+    let walkthrough: Walkthrough
+    @StateObject private var viewModel = WalkthroughViewModel()
     var body: some View {
-        TabView(selection: $currentSection) {
-            ForEach(steps.steps.enumerated(), id: \.offset) { index, step in
-                VStack {
-                    Text(step.title)
-                    Text(step.description)
-                    WalkthroughButton(
-                        walkthrough: step,
-                        action: {
-                            if index < steps.steps.count - 1 {
-                                currentSection += 1
-                            } else {
-                                currentSection += 0
-                            }
-                        }
-                    )
+        ZStack {
+            Color.background.ignoresSafeArea()
+            TabView(selection: $viewModel.currentSection) {
+                ForEach(walkthrough.steps.enumerated(), id: \.offset) { index, step in
+                    VStack {
+                        Text(step.title)
+                        Text(step.description)
+                        WalkthroughButton(
+                            walkthrough: step,
+                            action: { viewModel.buttonAction(total: walkthrough.steps.count) }
+                        )
+                    }
+                    .tag(index)
                 }
-                .tag(index)
             }
+            .tabViewStyle(.page)
         }
-        .tabViewStyle(.page)
     }
 }
 
 #Preview {
-    WalkthroughView(steps: TestWalkthrough.walk)
+    WalkthroughView(walkthrough: TestWalkthrough.walk)
 }
